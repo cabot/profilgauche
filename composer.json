@@ -1,0 +1,29 @@
+{
+    "name": "cabot/profilgauche",
+    "type": "phpbb-extension",
+    "description": "Afficher le profil sur la gauche dans les messages",
+    "homepage": "http://cabotweb.fr",
+    "version": "1.0.1",
+    "keywords": [
+        "phpbb",
+        "extension"
+    ],
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "cabot",
+            "homepage": "http://cabotweb.fr",
+            "role": "SushiMaker"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "display-name": "Profil sur la gauche",
+        "soft-require": {
+            "phpbb/phpbb": "3.1"
+        }
+    }
+}

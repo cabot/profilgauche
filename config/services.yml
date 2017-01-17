@@ -1,0 +1,9 @@
+services:
+    cabot.profilgauche.listener:
+        class: cabot\profilgauche\event\listener
+        arguments:
+            - @request
+            - @template
+            - @user
+        tags:
+            - { name: event.listener }
