@@ -3,7 +3,7 @@
 *
 * @package phpBB Extension - Profil sur la gauche
 * @copyright (c) cabot
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
 
@@ -17,12 +17,15 @@ class listener implements EventSubscriberInterface
 
 	protected $template;
 
+	protected $language;
+
 	protected $user;
 
-	public function __construct(\phpbb\request\request $request, \phpbb\template\template $template, \phpbb\user $user)
+	public function __construct(\phpbb\request\request $request, \phpbb\template\template $template, \phpbb\language\language $language, \phpbb\user $user)
 	{
 		$this->request = $request;
 		$this->template = $template;
+		$this->language = $language;
 		$this->user = $user;
 	}
 
@@ -37,7 +40,7 @@ class listener implements EventSubscriberInterface
 
 	public function ucp_prefs_data_add($event)
 	{
-		$this->user->add_lang_ext('cabot/profilgauche', 'ucp');
+		$this->language->add_lang('ucp', 'cabot/profilgauche');
 
 		$profilgauche = $this->request->variable('profilgauche', (bool) $this->user->data['user_profilgauche']);
 		$event['data'] = array_merge($event['data'], array(
