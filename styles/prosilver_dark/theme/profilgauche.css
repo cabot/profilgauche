@@ -1,0 +1,39 @@
+@media (min-width: 701px) {
+	
+	.post.online {
+		background-image: none !important;
+	}
+
+	.post .preonline.online {
+		width: 58px;
+		height: 58px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		-ms-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+	}	
+
+	.no-avatar .preonline.online {
+		position: relative;
+		margin: -8px;
+	}
+		
+	.post .postprofile {
+		float: left;
+		border-width: 0 1px 0 0;
+	}
+	
+	.post .postprofile dd, .post .postprofile dt {
+		margin-right: 8px;
+		margin-left: 0;
+	}
+
+	.has-profile .postbody {
+		float: right;
+		margin-right: 6px;
+	}
+	
+}
