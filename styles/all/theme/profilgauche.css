@@ -1,4 +1,4 @@
-@media only screen and (min-width : 701px) {
+@media (min-width: 701px) {
 	
 	.post.online {
 		background-image: none;
@@ -15,6 +15,11 @@
 		-webkit-transform: rotate(-90deg);
 		transform: rotate(-90deg);
 	}	
+
+	.no-avatar .preonline.online {
+		position: relative;
+		margin: -8px;
+	}
 		
 	.post .postprofile {
 		float: left;
@@ -26,8 +31,9 @@
 		margin-left: 0;
 	}
 
-	.post .postbody {
+	.has-profile .postbody {
 		float: right;
+		margin-right: 6px;
 	}
 	
 }
