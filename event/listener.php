@@ -29,7 +29,7 @@ class listener implements EventSubscriberInterface
 		$this->user = $user;
 	}
 
-	static public function getSubscribedEvents()
+	public static function getSubscribedEvents()
 	{
 		return array(
 			'core.ucp_prefs_view_data'			=> 'ucp_prefs_data_add',
@@ -64,5 +64,5 @@ class listener implements EventSubscriberInterface
 		$this->template->assign_vars(array(
 			'S_DISPLAY_PROFILGAUCHE'	=> $this->user->data['user_profilgauche'],
 		));
-	}	
+	}
 }
