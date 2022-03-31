@@ -19,5 +19,5 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'PROFILGAUCHE'			=> 'Profil sur la gauche',
-	'PROFILGAUCHE_EXPLAIN'	=> 'Sélectionner « Non » pour afficher le profil sur la droite.',
+	'PROFILGAUCHE_EXPLAIN'	=> 'Sélectionner « Non » pour afficher le profil sur la droite.',
 ));
